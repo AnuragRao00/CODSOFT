@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{   
+
+    cout<<"\t\t::SIMPLE CALCULATOR::"<<endl;
+    char operation;
+    double num1,num2,answer;
+    cout<<"+. Addition\n"<<endl;
+    cout<<"-. Subtraction\n"<<endl;
+    cout<<"*. Multiplication\n"<<endl;
+    cout<<"/. Division\n"<<endl;
+
+    cout<<"Enter the operation you want to perform"<<endl;
+    cin>>operation;
+    cout<<"Enter two numbers:";
+    cin>>num1>>num2;
+
+    switch(operation){
+        case '+': 
+            answer=num1+num2;
+            cout<<"Answer = "<<answer<<endl;
+            break;
+
+        case '-':
+            answer=num1-num2;
+            cout<<"Answer = "<<answer<<endl;
+            break;
+
+        case '*':
+            answer=num1*num2;
+            cout<<"Answer = "<<answer<<endl;
+            break;
+
+        case '/':
+            answer=num1/num2;
+            cout<<"Answer = "<<answer<<endl;
+            break;
+            
+        default:
+            cout<<"Wrong Operation"<<endl;
+            break;
+    }
+    cout<<endl;
+
+    return 0;
+}
